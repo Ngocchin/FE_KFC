@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Tạo Trang Login</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="./Font-Awesomecss/css/font-awesome.min.css">
+     <style>
+    section .noi-dung .form h3{
+     color: #607d8b;
+     text-align: center;
+     margin: 80px 0 10px;
+     font-weight: 900;
+ }
+section .noi-dung .form .icon-dang-nhap{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+section .noi-dung .form .icon-dang-nhap li{
+     list-style: none;
+     cursor: pointer;
+     width: 50px;
+     height: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ section .noi-dung .form .icon-dang-nhap li:nth-child(1){
+     color: #3b5999;
+ }
+ section .noi-dung .form .icon-dang-nhap li:nth-child(2){
+     color: #dd4b39;
+ }
+ section .noi-dung .form .icon-dang-nhap li:nth-child(3){
+     color: #55acee;
+ }
+ section .noi-dung .form .icon-dang-nhap li i{
+     font-size: 24px;
+ }
+
+
+ .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+ 
+.fa:hover {
+    opacity: 0.7;
+}
+ 
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+ 
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+ 
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+ 
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+.actionForm input[type="text"],
+.actionForm input[type="password"]
+{
+padding: 60px;
+border: 1px solid #eee;
+border-radius: 7px;
+width: 100%;
+}
+     </style>
+</head>
+<body>
+ 
+<section>
+     <!--Bắt Đầu Phần Hình Ảnh-->
+  
+     <div class="img-bg">
+         <img src="https://cafefcdn.com/2017/photo-0-1492308283029.png" alt="Hình Ảnh Minh Họa">
+     </div>
+     <!--Kết Thúc Phần Hình Ảnh-->
+     <!--Bắt Đầu Phần Nội Dung-->
+<form name="F1" method="get" style="border:#777 solid 4px; width:700px; margin:auto ; border-radius:10px;">
+     <div class="noi-dung">
+             <h1 style="margin-left:300px;">ĐĂNG NHẬP</h1>
+         <div class="form">
+
+             <form action="">
+                 <div class="input-form">
+                     <span style="margin-left: 30px;color: red"></span>
+                     <input type="text" placeholder="Tên Đăng nhập *" name="yourname"/><br><br>
+                   
+                 </div>
+                 <br />
+                 <div class="input-form">
+                     <span style="margin-left: 30px;color: red"></span>
+                     <input type="password" placeholder="Mật khẩu *" name="password"/><br><br>
+                 </div>
+                 <div class="nho-dang-nhap">
+                     <label><input style="margin-left: 450px"; type="checkbox" name=""> Nhớ Pasword Đăng Nhập</label>
+                 </div>
+               
+                 <div class="input-form">
+                     <p>Bạn Chưa Có Tài Khoản? <a href="file:///D:/THIET%20KE%20WEB/%C4%91%C4%83ng%20k%C3%BD.html">Đăng Ký</a></p>
+                 </div>
+             </form>
+             <h3>Đăng Nhập Bằng Mạng Xã Hội</h3>
+             <ul class="icon-dang-nhap">
+                <div id="link">
+                    <a href="https://www.bing.com/ck/a?!&&p=0f69840836ad4ec3c3cea111c6abc9815f87718ff21babff7e08e793913705eeJmltdHM9MTY1NDUyMDIwNiZpZ3VpZD0xM2UyNGY3Ni0zMjhiLTQ4NWItYmRhNi0zZTg5YWQwYmNiNmMmaW5zaWQ9NTE0NA&ptn=3&fclid=1eeaaf50-e598-11ec-8a64-0c10d492043b&u=a1aHR0cHM6Ly92aS12bi5mYWNlYm9vay5jb20v&ntb=1" class="fa fa-facebook"></a>
+                    <a href="https://www.bing.com/ck/a?!&&p=3e634c66978becf0de6950b993ad56c23b60b1af00eecabad3a40b41ebb77d77JmltdHM9MTY1NDUyMDI0NSZpZ3VpZD1iYWE3ZDY4MC0zMGQ3LTQyZmQtOGY4ZC03YWM2YzBmOTkxMzYmaW5zaWQ9NTE0NQ&ptn=3&fclid=36074a39-e598-11ec-8f37-6191b05708cc&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vP2dsPUVT&ntb=1" class="fa fa-youtube"></a>
+                    <a href="https://www.bing.com/ck/a?!&&p=d771e93fa454280ba88626e585cbf5b064f85dd7554d9f6b8ddc9e57180e994eJmltdHM9MTY1NDUyMDI2MiZpZ3VpZD0zNzI4MzUzNy1lYmY1LTRkZmUtOTkzMy03NmYwMmNhMWUwZDAmaW5zaWQ9NTM4MA&ptn=3&fclid=40916cd5-e598-11ec-8e8d-fb1bebad68e0&u=a1aHR0cHM6Ly90d2l0dGVyLmNvbS8&ntb=1" class="fa fa-twitter"></a>
+                    <a href="https://www.bing.com/ck/a?!&&p=db32fa48f612279465776c2c60fe59e6a3a9667646f5cb3118f02eb06c38923fJmltdHM9MTY1NDUyMDI4NCZpZ3VpZD0wMTk5NzFlOC1jMWM5LTQ5MTktYmU0My1iOTAwNTM5OTU0N2EmaW5zaWQ9NTE0Mg&ptn=3&fclid=4dc14e7c-e598-11ec-a9d6-67ff10e50a1c&u=a1aHR0cHM6Ly9tYWlsLmdvb2dsZS5jb20vbWFpbD9obD1lbi1HQg&ntb=1" class="fa fa-google"></a>
+</div>
+             </ul>
+   
+   
+
+<span style="margin-left:20px"></span>
+        <input type="checkbox" value="Xac nhan dong y*" />
+        <label style=" color: red" >Xác nhận đồng ý**</label>
+        <br />
+         </div>
+ <br />
+        <input style="margin-left: 190px;  color: #ffffff;height:50px; width:300px;background-color:#ff0000" type="submit" value="ĐĂNG NHẬP NGAY !!!" />
+         <br />
+         <br />
+     </div>
+     <!--Kết Thúc Phần Nội Dung-->
+    
+ </section>
+</body>
+</html>

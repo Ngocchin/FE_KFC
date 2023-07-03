@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        /****************************/
+        .KFC {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+            grid-gap: 10px;
+            padding: 5px;
+            
+        }
+        .KFC > div {
+                background-color: rgba(255, 255, 255,0);
+                text-align:center;
+                padding: 20px 0;
+                font-size: 30px;
+            }
+        /****************************/
+        .login {
+            border-radius: 30px;
+            border: 1px solid;
+            font-size: 20px;
+            padding: 15px;
+        }
+        .login:hover {
+                border-color: #a2a2c8;
+                box-shadow: 3px 3px 2px 2px #a2a2c8 ;
+            }
+        .login1 {
+            
+            border-radius: 30px;
+            border: 1px solid;
+            font-size: 20px;
+            padding: 15px;
+        }
+        .login1:hover {
+                border-color: #a2a2c8;
+                box-shadow: 3px 3px 2px 2px #a2a2c8;
+            }
+        /****************************/
+        #voucher {
+            overflow: hidden;
+            height: 280px;
+            width: 728px;
+            margin: 0 auto;
+            grid-column: 1/span 10; /*span 10 la chia ra lam 10 phan*/ /*1/span x la tu 1 toi x*/
+            grid-row: 2;
+            margin-top:-5px;
+        }
+        .slide-wrapper {
+            width: 2912px;
+            -webkit-animation: slide 15s ease infinite;
+        }
+        .slide {
+            float: left;
+            height: 510px;
+            width: 728px;
+        }
+        @-webkit-keyframes slide {
+            20% {margin-left: 0px;}
+            30% {margin-left: -728px;}
+            50% {margin-left: -728px;}
+            60% {margin-left: -1456px;}
+            80% {margin-left: -1456px;}
+        }
+        /****************************/
+       .thanhmenu{
+           grid-column: 1/span 10; /*span 10 la chia ra lam 10 phan*/ /*1/span x la tu 1 toi x*/
+            grid-row: 3;
+            display: flex;
+        width: 90%;
+        margin: 0 auto;
+        gap: 2px;
+       }
+       .item {
+            padding: 5px;
+            background-color: #f15d5d;
+            color: white;
+            width: fit-content;
+            border: 2px solid #da2626;
+            height: 20px;
+            display: grid;
+            place-items: center;
+            position: relative;
+            font-size:20px;
+        }
+
+            .item:hover {
+                background-color: #f69d5e;
+            }
+
+        .first {
+            width: 200px;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            display: none;
+        }
+
+        .first-item {
+            border-bottom: 3px solid white;
+            background-color: #f15d5d;
+            height: 40px;
+            width: 300px;
+            display: grid;
+            place-items: left;
+        }
+
+            .first-item:hover {
+                background-color: #f69d5e;
+            }
+
+        .second {
+            width: 200px;
+            position: absolute;
+            right: -100%;
+            top: 25%;
+            display: none;
+        }
+
+        .second-item, .third-item {
+            border-bottom: 3px solid white;
+            background-color: #90f;
+            height: 30px;
+            display: grid;
+            place-items: center;
+        }
+
+        .third {
+            width: 200px;
+            position: absolute;
+            right: -100%;
+            bottom: 0;
+            display: none;
+        }
+        /**************************************************************************************************/
+        .trangchu {
+            grid-column: 1/span 10; /*span 10 la chia ra lam 10 phan*/ /*1/span x la tu 1 toi x*/
+            grid-row: 3;
+        }
+      </style>
+    </style>
+</head>
+<body>
+
+    <div class="KFC">
+        <table>
+            <tr>
+                <td>
+                    <img src="https://pngimg.com/uploads/kfc/kfc_PNG33.png" style="margin-left:360px" width ="120" height="110" />
+                </td>
+                <td>
+                    <img src="hinh1.png" style="border-radius:10px"/><br />
+                    <span ><b style="font-size:25px ;margin-left:10px">WELCOME TO CHICKEN WORLD</b></span>
+                </td>
+                <td style="float:right" align="center">
+                    <div class="login" style="font-size:20px;background-color:#f58181">
+                        <a href="đăng-nhập.html"><b>Đăng nhập</b></a>
+                    </div>
+                   
+                    <div class="login1" style="font-size: 20px; background-color: #f58181">
+                        <a href="đăng-ký.html"><b>Đăng ký</b></a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div id="voucher" align="center">
+            <div class="slide-wrapper">
+                <div class="slide"><img src="https://i.ytimg.com/vi/NvrvqNmTnBI/maxresdefault.jpg" width="1000" height="300"></div>
+                <div class="slide"><img src="https://i.ytimg.com/vi/4_U-n9o1gs8/maxresdefault.jpg" width="1000" height="300"></div>
+                <div class="slide"><img src="https://i.ytimg.com/vi/SnZ_KzLzdCE/maxresdefault.jpg" width="1000" height="300"></div>
+            </div>
+        </div>
+        <div class="thanhmenu">
+                <div style="margin-left:320px" class="item">
+                    <span>TRANG CHỦ</span>
+                </div>
+                <div class="item" id="intro">
+                    <span>COMBO </span>
+                    <div class="first" id="introFirst">
+                        <div class="first-item"><a href="Combo1nguoi.html">COMBO 1 NGƯỜI</a></div>
+                        <div class="first-item"><a href="ComboGD.html">COMBO GIA ĐÌNH</a></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <span>ƯU ĐÃI MÓN MỚI</span>
+                </div>
+                <div class="item">
+                    <span>CHI NHÁNH</span>
+                </div>
+                <div class="item">
+                    <span><a href="Góp-ý.html">GÓP Ý</a></span>
+                </div>
+                <div class="item">
+                    <span>GIỎ HÀNG</span>
+                </div>
+            </div>
+        </div>
+    <div class="trangchu" style="margin-left:450px">
+        <table border="1" cellpadding="0" cellspacing="0">
+            <tr>
+                <td>
+                    <img src="https://mgd.vn/wp-content/uploads/2021/01/bat-mi-cach-lam-ga-ran-kfc-tam-bot-chien-gion-tai-nha-ngon-kho-cuong-9523cb2639c5fdbbba8b0a0006acc315.jpg" width="200"height="180"/>
+                    <br />
+                    <span style="margin-left:5px"><b>*Thông tin món ăn</b></span>
+                    <span>
+                        <br />- Tên món ăn: Cánh gà cheese
+                        <br />- Giá tiền: 55.000đ/phần
+                        <br />- Mô tả món ăn:
+                        <br />  + Cánh gà áo cheese
+                        <br />  + 1 phần gồm 2 cánh
+                    </span>
+                </td>
+                <td>
+                    <img   src="https://media.mixfame.com/images/D71pdFUs8u.width-750.jpg" width="200" height="180" />
+                    <br />
+                    <span style="margin-left:5px"><b>*Thông tin món ăn</b></span>
+                    <span>
+                        <br />- Tên món ăn: Cánh gà muối
+                        <br />- Giá tiền: 50.000đ/phần
+                        <br />- Mô tả món ăn: 
+                        <br />  + Cánh gà ướp vị muối
+                        <br />  + 1 phần gồm 2 cánh
+                    </span>
+                </td>
+                <td>
+                    <img src="https://lh3.googleusercontent.com/-OSoqHbjzm-I/VnZdy5ZW3zI/AAAAAAAAEHc/eNIUEU6X_QA/s800-Ic42/cach-lam-ga-ran-ngon-nhu-kfc-004-20122015.jpg" width="200" height="180" />
+                    <br />
+                    <span style="margin-left:5px"><b>*Thông tin món ăn</b></span>
+                    <span>
+                        <br />- Tên món ăn: Cánh gà
+                        <br />- Giá tiền: 45.000đ/phần
+                        <br />- Mô tả món ăn:
+                        <br />  + Cánh gà nguyên vị
+                        <br />  + 1 phần gồm 2 cánh
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script>
+    const intro = document.getElementById("intro");
+    const introFirst = document.getElementById("introFirst")
+    const secondIntro = document.getElementById("secondIntro")
+    const train = document.getElementById('train')
+    const trainChild = document.getElementById('trainChild')
+    const rank = document.getElementById("rank")
+    const trainChildist = document.getElementById('trainChildist');
+    const inter = document.getElementById('inter');
+
+    intro.addEventListener('mouseover', () => {
+        introFirst.style.display = "block"
+    })
+    intro.addEventListener('mouseleave', () => {
+        introFirst.style.display = " none";
+    })
+
+    secondIntro.addEventListener('mouseover', () => {
+        train.style.display = "block"
+    })
+    secondIntro.addEventListener('mouseleave', () => {
+        train.style.display = " none";
+    })
+
+    trainChild.addEventListener('mouseover', () => {
+        rank.style.display = "block"
+    })
+    trainChild.addEventListener('mouseleave', () => {
+        rank.style.display = "none"
+    })
+
+    trainChildist.addEventListener('mouseover', () => {
+        inter.style.display = "block"
+    })
+    trainChildist.addEventListener('mouseleave', () => {
+        inter.style.display = "none"
+    })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combo GD</title>
+    <style>
+        body {
+            margin: 5% 14%;
+        }
+
+        .container {
+            display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+        }
+
+        .grid-box {
+            width: 100%;
+            height: auto;
+            border: 1px solid black;
+            background-color: rgb(248, 248, 248);
+            font-size: 16px;
+            position: relative;
+        }
+
+        .img, .content {
+            padding: 20px;
+        }
+
+        .img {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .grid-box > .img > img {
+            max-height: 100px;
+            min-height: 200px;
+            object-fit: contain;
+            width: 100%;
+            transition: all 1s;
+        }
+
+            .grid-box > .img > img:hover {
+                transform: scale(1.3);
+            }
+
+        .title {
+            font-size: 18px;
+        }
+
+        .cost {
+            font-weight: 700;
+            color: red;
+        }
+
+        .stared {
+            color: rgb(255, 238, 0);
+        }
+
+        .not-star {
+            color: lightgray;
+        }
+
+        sup {
+            text-decoration: underline;
+        }
+
+        .special {
+            /* display: flex; */
+            height: auto;
+            position: absolute;
+            bottom: 0;
+            left: 10px;
+        }
+
+        .low {
+            color: white;
+            display: flex;
+            font-weight: 600;
+            border-radius: 15px;
+            padding-right: 10px;
+            left: 0;
+            background: linear-gradient(to right, yellow, red);
+        }
+
+        .circle {
+            font-size: 12px;
+            display: grid;
+            place-items: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: red;
+        }
+
+        .repay {
+            position: absolute;
+            width: auto;
+            height: auto;
+            background-color: rgb(255, 187, 0);
+            padding: 0 5px;
+            bottom: 0;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="img-bg">
+        <img src="https://cafefcdn.com/2017/photo-0-1492308283029.png" alt="Hình Ảnh Minh Họa">
+    </div>
+    <h1><a class="grid-box" style="font-size:30px;color:white;background-color:red" href="KFC(1).html">QUAY VỀ TRANG CHỦ</a> - COMBO NHÓM VÀ GIA ĐÌNH </h1>
+
+    <div class="container">
+        <div class="grid-box">
+            <div class="img">
+                <img style="margin-bottom:10px" src="https://kfcvietnam.com.vn/uploads/combo/24b886c205e456b301530b4a66da3950.png" width="500" height="300" />
+                <div class="special">
+                </div>
+            </div>
+            <div class="content">
+                <div class="title"><big><b>Combo 1</b></big></div>
+                <div class="cost"><spant><big><b>162</b></big><small>.000</small></spant><sup>đ</sup></div>
+                <div>
+                    *3 Miếng Gà Giòn Cay / 3 Miếng Gà Giòn Không Cay / 3 Miếng Gà Truyền Thống <br />
+                    *1 Burger Zinger / 1 Burger Tôm / 1 Burger Gà Quay Flava <br />
+                    *2 Pepsi Lon
+                </div>                
+            </div>
+        </div>
+        <div class="grid-box">
+            <div class="img">
+                <img style="margin-bottom:10px" src="https://kfcvietnam.com.vn/uploads/combo/ef541993a629e3e86c39de1ed595909a.png " width="500" height="300" />
+            </div>
+            <div class="content">
+                <div class="title"><big><b>Combo 2</b></big></div>
+                <div class="cost"><spant><big><b>176</b></big><small>.000</small></spant><sup>đ</sup></div>
+                <div>
+                    *4 Miếng Gà Giòn Cay / 4 Miếng Gà Giòn Không Cay / 4 Miếng Gà Truyền thống <br/>
+                    *2 Thanh Bí Phô-mai <br />
+                    *2 Pepsi Lon
+                </div>
+            </div>
+        </div>
+        <div class="grid-box">
+            <div class="img">
+                <img style="margin-bottom:10px" src="https://kfcvietnam.com.vn/uploads/combo/2a9885f111e2fc015f519514509ea961.png" width="500" height="300" />
+            </div>
+            <div class="content">
+                <div class="title"><big><b>Combo 3</b></big></div>
+                <div class="cost"><spant><big><b>225</b></big><small>.000</small></spant><sup>đ</sup></div>
+                <div>
+                    *5 Miếng Gà Giòn Cay / 5 Miếng Gà Giòn Không Cay / 5 Miếng Gà Truyền Thống <br />
+*1 Gà Popcorn (Vừa) / 2 Xiên Gà Tenderods <br />
+*3 Pepsi Lon
+                </div>
+            </div>
+        </div>
+        <div class="grid-box">
+            <div class="img">
+                <img style="margin-bottom:10px" src="https://kfcvietnam.com.vn/uploads/combo/ebd7fae07f2117f4a26aa5e1ba4fcfb8.png" width="500" height="300" />
+            </div>
+            <div class="special">
+                <div class="low">
+                    <span class="circle">⚡</span><span> PHẦN ĐẶC BIỆT</span>
+                </div>
+                <div class="content">
+                    <div class="title"><big><b>Combo 4</b></big></div>
+                    <div class="cost"><spant><big><b>352</b></big><small>.000</small></spant><sup>đ</sup></div>
+                    <div>
+                        *5 Miếng Gà Giòn Cay / 5 Miếng Gà Giòn Không Cay / 5 Miếng Gà Truyền Thống <br />
+                        *2 Burger Zinger / 2 Burger Tôm <br />
+                        *1 Mì Ý Xốt Cà Gà Viên <br />
+                        *3 Thanh Bí Phô-mai <br />
+                        *4 Pepsi Lon
+                    </div>
+                </div>
+            </div>
+</body>
+</html>
